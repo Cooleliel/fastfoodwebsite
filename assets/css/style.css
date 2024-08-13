@@ -14,6 +14,95 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+:root {
+
+  /**
+  * COLORS
+  */
+
+  /**
+  * Bacground color
+  */
+  --bg-sinopia: hsl(17, 100%, 44%);
+  --bg-sinopia-alpha-90: hsla(17, 100%, 44%, 0.9);
+  --bg-sinopia-alpha-7: hsla(17, 100%, 44%, 0.07);
+  --bg-rich-black-fogra-29: hsl(207, 24%, 7%);
+  --bg-rich-black-rogra-29-alpha-50: hsla(207, 24%, 7%, 0.5);
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-isabelline: hsl(30, 43%, 97%);
+  --bg-seashell: hsl(15, 80%, 96%);
+  --bg-light-gray: hsl(0, 0%, 80%);
+  --bg-black: hsl(0, 0%, 0%);
+
+  /**
+  * Text color
+  */
+  --text-white: hsl(0, 0%, 100%);
+  --text-black: hsl(0, 0%, 0%);
+  --text-sinopia: hsl(17, 100%, 44%);
+  --text-rich-black-fogra-29: hsl(207, 24%, 7%);
+  --text-granite-gray: hsl(0, 0%, 40%);
+
+  /**
+  * Border color
+  */
+  --border-white: hsl(0, 0%, 100%);
+  --border-white-alpha-50: hsla(0, 0%, 100%, 0.5);
+  --border-cultured: hsl(0, 0%, 93%);
+  --border-platinum: hsl(30, 9%, 87%);
+
+  /**
+  * Typography
+  */
+
+  /**
+  * Font Fmily
+  */
+  --fontFamily-opensans: 'Open Sans', sans-serif;
+  --fontFamily-forum: 'Forum', cursive;
+
+  /**
+  * Font Size
+  */
+  --fontSize-1: 4.0rem;
+  --fontSize-2: 3.6rem;
+  --fontSize-3: 3.5rem;
+  --fontSize-4: 2.7rem;
+  --fontSize-5: 2.4rem;
+  --fontSize-6: 1.8rem;
+  --fontSize-7: 1.6rem;
+  --fontSize-8: 1.4rem;
+
+  /**
+  * Font Weight
+  */
+  --weight-regular: 400;
+  --weight-semiBold: 600;
+
+  /**
+  * Spacing
+  */
+  --section-spacing: 80px;
+
+  /**
+  * Shadow
+  */
+  --shadow: 0px 4px 40px hsla(0, 0%, 0%, 0.1);
+
+  /**
+  * Border radius
+  */
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-circle: 50%;
+
+  /**
+  * Transition
+  */
+  --transition-1: 250ms ease;
+  --transition-2: 500ms ease;
+}
 
 
 
@@ -22,7 +111,73 @@
   #RESET
 \*-----------------------------------*/
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li {
+  list-style: none;
+}
+
+a,
+img,
+button,
+ion-icon {
+ display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fontFamily-opensans);
+  background-color: var(--bg-white);
+  color: var(--text-granite-gray);
+  font-size: var(--fontSize-6);
+  line-height: 1.65;
+}
+
+::placeholder {
+  color: inherit;
+}
 
 
 
