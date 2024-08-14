@@ -8,7 +8,7 @@
   <!--
   - primary meta tags
   -->
-  <title>Chitir Chicken - The Best Chicken</title>
+  <title>Poulet Chitir - Le meilleur poulet</title>
   <meta name="title" content="Chitir Chicken"/>
   <meta name="description" content="this is a website food"/>
 
@@ -36,6 +36,85 @@
 
  <body>
 
+  <!--
+  - HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/chitir.png" alt="Chitir home" width="130" height="45">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+
+        </button>
+        <a href="#" class="nav-logo">
+
+          <img src="./assets/images/chitir.png" alt="Chitir home" width="175" height="61">
+
+        </a>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Menu</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="" class="navbar-link" data-nav-link>A propos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Boutique</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Actualités</a>
+          </li>
+            
+        </ul>
+
+        <a href="#" class="btn">
+          <span class="span">Réservez une table</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+      </nav>
+
+      <div class="header-action">
+
+        <a href="tel:0022670819884" class="call">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">(+226) 70819884</span>
+        </a>
+
+        <a href="#" class="btn">
+          <span class="span">Réservez une table</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+     <div class="overlay" data-overlay data-nav-toggler=""></div> 
+
+    </div>
+  </header>
+
   <!-- 
   - custom js links
   -->
@@ -45,6 +124,6 @@
   <!--
   - ionicon link
   -->
-  <script type="module" src=""></script>
+  <script type="module" src="./assets/js/script.js"></script>
  </body>
 </html>
