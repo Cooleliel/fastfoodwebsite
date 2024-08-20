@@ -208,6 +208,40 @@ body {
   background-color: var(--bg-rich-black-fogra-29);
 }
 
+.shape  {
+  display: none;
+}
+
+.title {
+  color: var(--text-rich-black-fogra-29);
+  font-family: var(--fontFamily-forum);
+  font-weight: var(--weight-regular);
+}
+
+.h1 {
+  font-size: var(--fontSize-1);
+  line-height: 1;
+}
+
+.h2 {
+  font-size: var(--fontSize-2);
+}
+
+.h3 {
+  font-size: var(--fontSize-3);
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  overflow: hidden;
+  background-color: var(--bg-light-gray);
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*-----------------------------------*\
   #HEADER
@@ -332,7 +366,27 @@ body {
   #HERO
 \*-----------------------------------*/
 
+.hero .arrow{
+  display: none;
+}
 
+.hero {
+  background-color: var(--bg-seashell);
+  padding-block: 100px var(--section-spacing);
+}
+
+.hero .container {
+  display: grid;
+  gap: 40px;
+}
+
+.hero-content {
+  order: 1;
+}
+
+.hero .section-text {
+  margin-block: 35px 40px;
+}
 
 
 
