@@ -148,6 +148,7 @@ button {
 
 input {
   width: 100%;
+  outline: none;
 }
 
 button {
@@ -580,8 +581,44 @@ body {
   #RESERVATION
 \*-----------------------------------*/
 
+.reservation .container {
+  display: grid;
+  gap: 50px;
+}
 
+.reservation .section-subtitle {
+  font-size: var(--fontSize-7);
+}
 
+.reservation .section-text {
+  margin-block: 20px 30px;
+}
+
+.booking-form {
+  display: grid;
+  gap: 30px;
+}
+
+.booking-form .input-wrapper {
+  background: var(--bg-isabelline);
+  color: var(--text-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border: 1px solid var(--border-platinum);
+  border-radius: var(--radius-5);
+}
+
+.booking-form .input-wrapper ::placeholder {
+  font-weight: var(--weight-semiBold);
+}
+
+.booking-form .input-wrapper ion-icon {
+  color: var(--text-black);
+  font-size: 2rem;
+  --ionicon-stroke-width: 40px;
+}
 
 
 /*-----------------------------------*\
