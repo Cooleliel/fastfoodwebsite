@@ -243,6 +243,33 @@ body {
   object-fit: cover;
 }
 
+.section {
+  padding-block: var(--section-spacing);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  color: var(--text-sinopia);
+  text-transform: uppercase;
+  font-weight: var(--weight-semiBold);
+  margin-block: 10px;
+}
+
+.grid-list {
+  display: grid;
+  gap: 40px;
+}
+
+.separator{
+  display: block;
+  flex-grow: 1;
+  border-block-end: 1px dashed currentColor;
+}
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -394,7 +421,55 @@ body {
   #POPULAR
 \*-----------------------------------*/
 
+.popular {
+  background: var(--bg-sinopia);
+}
 
+.popular :is(.section-subtitle, .title) {
+  color: var(--text-white);
+}
+
+.popular .section-title {
+  margin-block-end: 50px;
+}
+
+.popular-card {
+  background: var(--bg-white);
+  padding: 30px 20px;
+  border-radius: var(--radius-12);
+  display: flex;
+  align-items: center;
+  gap: 12px
+}
+
+.popular-card .card-icon img {
+  width: 30px;
+}
+
+.popular-card .card-title {
+  color: var(--text-rich-black-fogra-29);
+  transition: var(--transition-1);
+}
+
+.popular-card .card-btn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-cultured);
+  border-radius: var(--radius-5);
+  margin-inline-start: auto;
+  transition: var(--transition-1);
+}
+
+.popular-card:is(:hover, :focus-within) .card-title {
+  color: var(--text-sinopia);
+}
+
+.popular-card:is(:hover, :focus-within) .card-btn {
+  background: var(--bg-rich-black-fogra-29);
+  color: var(--text-white);
+}
 
 
 
@@ -402,7 +477,53 @@ body {
   #MENU
 \*-----------------------------------*/
 
+.menu .section-title {
+  margin-block: 50px;
+}
 
+.section-wrapper {
+  display: grid;
+  gap: 50px;
+}
+
+/*.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 20px;
+}*/
+
+.menu-item .title-wrapper {
+  display: flex;
+  align-items: baseline;
+  transition: var(--transition-2);
+}
+
+.rating-wrapper ion-icon,
+.title-wrapper:is(:hover, :focus-visible) {
+  color: var(--text-sinopia);
+}
+
+.item-title,
+.price {
+  font-size: var(--fontSize-5);
+  font-weight: var(--weight-regular);
+}
+
+.menu-text {
+  margin-block: 10px;
+}
+
+.rating-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+}
+
+.rating-text {
+  margin-inline-start: 10px;
+}
 
 
 
