@@ -625,16 +625,137 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
+.footer {
+  background: var(--bg-sinopia-alpha-7);
+}
 
+.footer-top .container {
+  display: grid;
+  gap: 40px;
+}
 
+.footer-text {
+  margin-block: 30px 20px;
+}
 
+.footer-form {
+  position: relative;
+}
+
+.footer-input {
+  background: var(--bg-white);
+  color: var(--text-black);
+  box-shadow: var(--shadow);
+  height: 56px;
+  padding-inline: 30px 60px;
+  font-size: var(--fontSize-8);
+  font-weight: var(--weight-regular);
+}
+
+.footer-form .form-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  color: var(--text-sinopia);
+  font-size: 2rem;
+}
+
+.footer-list-title {
+  font-size: var(--fontSize-4);
+  line-height: 1.6;
+  margin-block-end: 15px;
+}
+
+.footer-link {
+  margin-block-start: 10px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  color: var(--text-sinopia);
+}
+
+.list-subtitle {
+  line-height: 2.5;
+}
+
+.call,
+.email {
+  transition: var(--transition-1);
+}
+
+.footer .call {
+  font-size: var(--fontSize-1);
+}
+
+.eamil {
+  margin-block-end: 20px;
+}
+
+.footer :is(.call, .email):is(:hover, :focus-visible) {
+  color: var(--text-sinopia);
+}
+
+.contact-text {
+  color: var(--text-black);
+}
+
+.footer-bottom {
+  padding-block: 20px;
+  border-block-start: 1px solid var(--border-platinum);
+}
+
+.copyright {
+  margin-block-end: 15px;
+}
+
+.footer-bottom-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.footer-bottom-link {
+  transition: var(--transition-1);
+}
+
+.footer-bottom-link:is(:hover, :focus-visible) {
+  color: var(--text-sinopia);
+}
 
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
 
+.back-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: var(--bg-sinopia);
+  color: var(--text-white);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition-1);
+  z-index: 3;
+}
 
+.back-top-btn.active {
+  transform: translateY(-10px);
+  visibility: visible;
+  opacity: 1;
+}
 
+.back-top-btn:is(:hover, :focus-visible) {
+  background: var(--bg-rich-black-fogra-29);
+}
 
 
 /*-----------------------------------*\

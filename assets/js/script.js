@@ -35,11 +35,16 @@ const closeNav = function () {
 addEventOnElements(navbarLinks, "click", closeNav);
 
 /**
- * HEADER
+ * HEADER & BACK TOP BTN
  */
 
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 window.addEventListener("scroll", function () {
+
  header.classList[window.scrollY > 50 ? "add" : "remove"]("active");
+
+ backTopBtn.classList[window.scrollY > 50 ? "add" : "remove"]("active");
+
 })
